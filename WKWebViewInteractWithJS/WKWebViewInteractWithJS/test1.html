@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<script>
+function dosomething()
+{
+    setupWebViewJavascriptBridge(function(bridge) {
+                                 
+                                 bridge.callHandler('JSCallObjc', {'foo': 'bar'}, function(response) {
+                                                    log('JS got response', response)
+                                                    })
+                                 
+                                 
+                                 })
+}
+</script>
+
+<meta http-equiv="content-Type" content="text/html;charset=gb2312">
+
+<script>
+    window.onerror = function(err) {
+        log('window.onerror: ' + err)
+    }
+
+function setupWebViewJavascriptBridge(callback) {
+    if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+    if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+    window.WVJBCallbacks = [callback];
+    var WVJBIframe = document.createElement('iframe');
+    WVJBIframe.style.display = 'none';
+    WVJBIframe.src = 'https://__bridge_loaded__';
+    document.documentElement.appendChild(WVJBIframe);
+    setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+}
+
+setupWebViewJavascriptBridge(function(bridge) {
+                             var uniqueId = 1
+                             function log(message, data) {
+                             var log = document.getElementById('log')
+                             var el = document.createElement('div')
+                             el.className = 'logLine'
+                             el.innerHTML = uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
+                             if (log.children.length) { log.insertBefore(el, log.children[0]) }
+                             else { log.appendChild(el) }
+                             }
+                             
+                             bridge.registerHandler('ObjcCallJS', function(data, responseCallback) {
+                                                    
+                                                    var button1 = document.getElementById('label');
+                                                    button1.innerHTML = '随机数:' +  data;
+                                                     
+                                                    log('ObjC called testJavascriptHandler with', data)
+                                                    responseCallback(responseData)
+                                                    })
+                             
+                             })
+                             
+    </script>
+
+</head>
+
+
+<body>
+    
+</br>
+</br>
+</br>
+</br>
+
+<div align="center"; style="font-size:80px">
+    这是一个HTML界面
+</div>
+
+</br>
+</br>
+</br>
+</br>
+
+<div id="label" align="center"; style="font-size:60px">
+    由OBJC代码生成随机数
+</div>
+
+</br>
+</br>
+</br>
+</br>
+
+<button style="background-color:#994d00;border:none;width:100%;height:120px;border-radius:4px;font-size:60px"; onclick="dosomething()">界面跳转</button>
+
+</br>
+</br>
+
+<div id='log'></div>
+</body>
+</html>

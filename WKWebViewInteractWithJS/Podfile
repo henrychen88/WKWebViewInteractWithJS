@@ -1,0 +1,3 @@
+target 'WKWebViewInteractWithJS' do
+pod 'WebViewJavascriptBridge'
+end
