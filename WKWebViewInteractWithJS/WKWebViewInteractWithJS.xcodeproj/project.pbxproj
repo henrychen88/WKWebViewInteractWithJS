@@ -8,27 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		547C3DC520CBCA494236822B /* libPods-WKWebViewInteractWithJS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B13498B0F668B547EC56F64 /* libPods-WKWebViewInteractWithJS.a */; };
-		BA75FFD71E728C38004D19C9 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = BA75FFD61E728C38004D19C9 /* ExampleApp.html */; };
 		BA75FFDA1E728C53004D19C9 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA75FFD91E728C53004D19C9 /* TestViewController.m */; };
-		BA75FFDC1E728EC8004D19C9 /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = BA75FFDB1E728EC8004D19C9 /* test1.html */; };
 		BA7F292B1E70F3A4000F359D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F292A1E70F3A4000F359D /* main.m */; };
 		BA7F292E1E70F3A4000F359D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F292D1E70F3A4000F359D /* AppDelegate.m */; };
 		BA7F29311E70F3A5000F359D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F29301E70F3A5000F359D /* ViewController.m */; };
 		BA7F29361E70F3A6000F359D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7F29351E70F3A5000F359D /* Assets.xcassets */; };
 		BA7F29391E70F3A6000F359D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7F29371E70F3A6000F359D /* LaunchScreen.storyboard */; };
-		BA7F29411E70F954000F359D /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = BA7F29401E70F954000F359D /* test.html */; };
 		BA7F29441E70FE83000F359D /* HTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F29431E70FE83000F359D /* HTMLViewController.m */; };
 		BA7F29471E7100C3000F359D /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F29461E7100C3000F359D /* DestinationViewController.m */; };
-		BA7F29491E713926000F359D /* JS in Resources */ = {isa = PBXBuildFile; fileRef = BA7F29481E713926000F359D /* JS */; };
+		BA7F29491E713926000F359D /* js in Resources */ = {isa = PBXBuildFile; fileRef = BA7F29481E713926000F359D /* js */; };
+		BA86F8941E76407100CCF690 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = BA86F88E1E763A1F00CCF690 /* ExampleApp.html */; };
+		BA86F8951E76407100CCF690 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = BA86F88F1E763A1F00CCF690 /* test.html */; };
+		BA86F8961E76407100CCF690 /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = BA86F8901E763A1F00CCF690 /* test1.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2852C2D6C27522803D70D399 /* Pods-WKWebViewInteractWithJS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewInteractWithJS.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewInteractWithJS/Pods-WKWebViewInteractWithJS.release.xcconfig"; sourceTree = "<group>"; };
 		3B13498B0F668B547EC56F64 /* libPods-WKWebViewInteractWithJS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WKWebViewInteractWithJS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA75FFD61E728C38004D19C9 /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
 		BA75FFD81E728C53004D19C9 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		BA75FFD91E728C53004D19C9 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		BA75FFDB1E728EC8004D19C9 /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
 		BA7F29261E70F3A4000F359D /* WKWebViewInteractWithJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewInteractWithJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7F292A1E70F3A4000F359D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA7F292C1E70F3A4000F359D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,12 +36,14 @@
 		BA7F29351E70F3A5000F359D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA7F29381E70F3A6000F359D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA7F293A1E70F3A6000F359D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA7F29401E70F954000F359D /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		BA7F29421E70FE83000F359D /* HTMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLViewController.h; sourceTree = "<group>"; };
 		BA7F29431E70FE83000F359D /* HTMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLViewController.m; sourceTree = "<group>"; };
 		BA7F29451E7100C3000F359D /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
 		BA7F29461E7100C3000F359D /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; };
-		BA7F29481E713926000F359D /* JS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JS; sourceTree = "<group>"; };
+		BA7F29481E713926000F359D /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		BA86F88E1E763A1F00CCF690 /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
+		BA86F88F1E763A1F00CCF690 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		BA86F8901E763A1F00CCF690 /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
 		E45BD8CDBD74FC05C027A97B /* Pods-WKWebViewInteractWithJS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewInteractWithJS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewInteractWithJS/Pods-WKWebViewInteractWithJS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,10 +89,8 @@
 		BA7F29281E70F3A4000F359D /* WKWebViewInteractWithJS */ = {
 			isa = PBXGroup;
 			children = (
-				BA7F29481E713926000F359D /* JS */,
-				BA7F29401E70F954000F359D /* test.html */,
-				BA75FFDB1E728EC8004D19C9 /* test1.html */,
-				BA75FFD61E728C38004D19C9 /* ExampleApp.html */,
+				BA86F88D1E7639E300CCF690 /* html */,
+				BA7F29481E713926000F359D /* js */,
 				BA7F292C1E70F3A4000F359D /* AppDelegate.h */,
 				BA7F292D1E70F3A4000F359D /* AppDelegate.m */,
 				BA7F292F1E70F3A5000F359D /* ViewController.h */,
@@ -117,6 +115,16 @@
 				BA7F292A1E70F3A4000F359D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA86F88D1E7639E300CCF690 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				BA86F88E1E763A1F00CCF690 /* ExampleApp.html */,
+				BA86F88F1E763A1F00CCF690 /* test.html */,
+				BA86F8901E763A1F00CCF690 /* test1.html */,
+			);
+			path = html;
 			sourceTree = "<group>";
 		};
 		BACD874D159608F06541C7BC /* Frameworks */ = {
@@ -189,12 +197,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA86F8941E76407100CCF690 /* ExampleApp.html in Resources */,
+				BA86F8951E76407100CCF690 /* test.html in Resources */,
+				BA86F8961E76407100CCF690 /* test1.html in Resources */,
 				BA7F29391E70F3A6000F359D /* LaunchScreen.storyboard in Resources */,
 				BA7F29361E70F3A6000F359D /* Assets.xcassets in Resources */,
-				BA7F29411E70F954000F359D /* test.html in Resources */,
-				BA75FFDC1E728EC8004D19C9 /* test1.html in Resources */,
-				BA7F29491E713926000F359D /* JS in Resources */,
-				BA75FFD71E728C38004D19C9 /* ExampleApp.html in Resources */,
+				BA7F29491E713926000F359D /* js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

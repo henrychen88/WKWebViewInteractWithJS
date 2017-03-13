@@ -37,7 +37,7 @@
 
 - (void)loadHtml
 {
-    NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"test1" ofType:@"html"];
+    NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
     NSURL *baseURL = [NSURL fileURLWithPath:htmlPath];
 
     NSString* appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];

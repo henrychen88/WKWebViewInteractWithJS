@@ -12,26 +12,27 @@ setupWebViewJavascriptBridge(function(bridge){
                              }
                              
                              bridge.registerHandler('ObjcCallJS', function(data, responseCallback) {
-                                                 setDivValue(data)
+                                                    setDivValue(data)
                                                     log('ObjC called testJavascriptHandler with', data)
-                                                
+                                                    
                                                     responseCallback(responseData)
                                                     })
                              
                              })
 
-})
 
 function setDivValue(data){
-                             
+    
     var div = document.getElementById('label');
     div.innerHTML = '随机数:' +  data;
-
+    
 }
 
 function jump(){
-                             var object = event.srcElement;
+    
+    setupWebViewJavascriptBridge(function(bridge) {
     bridge.callHandler('JSCallObjc', {'key':'value'}, function responseCallback(responseData) {
                        console.log("JS received response:", responseData);
-                    })
+                       })
+                                 })
 }
